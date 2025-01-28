@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading{
+    width: 80px;
+    height: 80px;
+    background-color: sandybrown;
+    display: flex;
+    gap: 10px;
+    position: absolute;
+}
+
+.dot{
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50% 0 50% 0;
+    display: flex;
+    position: absolute;
+}
+
+.circle1{
+    position: relative;
+    animation: one 2s ease-in-out 3.1s infinite;
+}
+
+.circle2{
+    position: relative;
+    animation: one 2.2s ease-in-out 3.2s infinite;
+}
+
+.circle3{
+    position: relative;
+    animation: one 2.6s ease-in-out 3.4s infinite;
+}
+
+.circle4{
+    position: relative;
+    animation: one 2.8s ease-in-out 3.6s infinite;
+}
+
+.circle5{
+    position: relative;
+    animation: one 3.0s ease-in-out 3.8s infinite;
+}
+
+@keyframes one {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
